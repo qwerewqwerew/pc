@@ -8,8 +8,10 @@ let path = location.pathname;
 let pcUrl = `${root}/pc/`;
 let mUrl = `${root}/mobile/`;
 
-if (ratioEvent > 1) {
-	document.location = "./mobile/";
+if (window.devicePixelRatio > 1) {
+	document.location = 'mobile.html';
+} else {
+	document.location = 'index.html';
 }
 
 function pageChage(uri) {
