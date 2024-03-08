@@ -9,9 +9,7 @@ let pcUrl = `${root}/pc/`;
 let mUrl = `${root}/mobile/`;
 
 if (ratioEvent > 1) {
-	location.replace = mUrl;
-} else {
-	location.replace = pcUrl;
+	document.location = "./mobile/";
 }
 
 function pageChage(uri) {
