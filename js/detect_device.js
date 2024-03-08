@@ -4,8 +4,8 @@ let ratioEvent = window.devicePixelRatio > 1 ? 2 : 1;
 let host = location.hostname;
 let path = location.pathname;
 
-let pcUrl = `//${host}/index.html`;
-let mUrl = `//${host}/mobile/index.html`;
+let pcUrl = `http://qwerewqwerew.github.io/pc/index.html`;
+let mUrl = `http://qwerewqwerew.github.io/mobile/index.html`;
 
 if (ratioEvent > 1) {
 	location.href = mUrl;
