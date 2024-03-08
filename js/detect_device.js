@@ -9,13 +9,13 @@ let pcUrl = `${root}/pc/`;
 let mUrl = `${root}/mobile/`;
 
 if (ratioEvent > 1) {
-	location.href = mUrl;
+	location.replace = mUrl;
 } else {
-	location.href = pcUrl;
+	location.replace = pcUrl;
 }
 
 function pageChage(uri) {
-	location.href = uri;
+	location.replace = uri;
 }
 
 mobile.addEventListener('click', function (e) {
@@ -27,3 +27,6 @@ pc.addEventListener('click', function (e) {
 	e.preventDefault();
 	pageChage(pcUrl);
 });
+// https://www.w3docs.com/snippets/javascript/how-to-redirect-mobile-devices-with-javascript-and-css.html
+
+//https://github.com/sebarmeli/JS-Redirection-Mobile-Site
