@@ -1,11 +1,12 @@
 const mobile = document.querySelector('.mobile');
 const pc = document.querySelector('.pc');
 let ratioEvent = window.devicePixelRatio > 1 ? 2 : 1;
+const root = 'https://qwerewqwerew.github.io/';
 let host = location.hostname;
 let path = location.pathname;
 
-let pcUrl = `../`;
-let mUrl = `./mobile/`;
+let pcUrl = `${root}/pc/`;
+let mUrl = `${root}/mobile/`;
 
 if (ratioEvent > 1) {
 	location.href = mUrl;
